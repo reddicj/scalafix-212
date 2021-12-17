@@ -1,5 +1,7 @@
 package my.app
 
+import java.time.LocalDate
+
 object HelloWorld extends App {
 
   val list: List[Int] = List(1, 2, 3)
