@@ -1,8 +1,8 @@
 name := "scalafix-212"
 organization := "my.app"
 
-scalaVersion := "2.12.15"
-// scalaVersion := "2.13.7"
+// scalaVersion := "2.12.15"
+scalaVersion := "2.13.7"
 
 scalacOptions ++= Seq(
   "-deprecation",
@@ -19,3 +19,5 @@ semanticdbEnabled := true
 semanticdbVersion := scalafixSemanticdb.revision
 addCompilerPlugin(scalafixSemanticdb)
 scalacOptions ++= List("-Yrangepos", "-P:semanticdb:synthetics:on")
+
+libraryDependencies ++= Dependencies.allDeps
